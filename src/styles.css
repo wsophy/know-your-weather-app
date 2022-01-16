@@ -46,9 +46,9 @@ text-transform:capitalize;
 }
 
 .weather-temperature img {
-margin-right:5px;
+margin-right:2px;
 vertical-align:top;
-
+padding:-10px;
 }
 
 .weather-temperature strong{
@@ -56,6 +56,7 @@ color:rgb(33,33,33);
 font-size:48px;
 line-height:2;
 font-weight:400;
+margin:0px;
 }
 
 .weather-temperature .units{

@@ -33,12 +33,32 @@ function displayTemperature(response){
     iconElement.setAttribute ("alt",response.data.weather[0].discription); 
 }
 
-let endpointUrl = "https://api.openweathermap.org/data/2.5/weather?";
-let tempetureUnits = "metric";
+function search(city){
 let apiKey ="220e37eed186a27e272ac52b9c9a702c"; 
-let city = "New York"
+let tempetureUnits = "metric";
+let endpointUrl = "https://api.openweathermap.org/data/2.5/weather?";
 let weatherUrl = `${endpointUrl}&q=${city}&appid=${apiKey}&units=${tempetureUnits}`;
-
 axios.get(weatherUrl).then(displayTemperature);
+}
 
 
+
+function handleSubmit(event){
+event.preventDefault();
+let cityInputElement = document.querySelector ("#city-input");
+search(cityInputElement.value);
+
+}
+
+
+
+
+
+
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+
+search("New York");
