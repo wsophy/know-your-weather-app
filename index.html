@@ -15,15 +15,13 @@
 <div class="weather-app-wrapper">
 <div class="weather-app">
 <div class="overview">
-    <h1>
-      New York
-    </h1>
+    <h1 id="city"></h1>
 
   <ul>
     <li>
       Friday 05:00
     </li>
-    <li>
+    <li id="description">
       clear
     </li>
   </ul>
@@ -35,7 +33,7 @@
        alt="Clear"
        class="float-left" />
        <span class="float-left">
-      <strong>12</strong><span class="units" >°C | <a href="#" >°F</span></a>
+      <strong id="temperature"></strong><span class="units" >°C | <a href="#" >°F</span></a>
 
       
     </span>
@@ -44,11 +42,11 @@
 
     <div class="col-6">
       <ul>
-        <li>
-          Humidity: 73%
+        <li >
+          Humidity: <span id="humidity"></span>%
         </li>
-        <li>
-          Wind:2km/h
+        <li >
+          Wind:<span id="wind"></span>km/h
         </li>
       </ul>
     </div>
