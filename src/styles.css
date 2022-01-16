@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 
@@ -52,7 +53,7 @@ vertical-align:top;
 
 .weather-temperature strong{
 color:rgb(33,33,33);
-font-size:64px;
+font-size:60px;
 line-height:1;
 font-weight:400;
 }
@@ -60,5 +61,5 @@ font-weight:400;
 .weather-temperature .units{
     position:relative;
     font-size:16px;
-    top:-32px;
+    top:-30px;
 }
