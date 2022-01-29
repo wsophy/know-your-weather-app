@@ -62,7 +62,7 @@ margin:0px;
 .weather-temperature .units{
     position:relative;
     font-size:16px;
-    top:-30px;
+    top:-23px;
 }
 
 .weather-temperature .active {
