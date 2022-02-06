@@ -31,9 +31,10 @@ text-transform:capitalize;
 }
 
 .weather-app-wrapper{
-    max-width: 600px;
+    max-width: 576px;
     margin: 30px auto;
     border-radius: 4px;
+    width:90%;
   
 }
 
